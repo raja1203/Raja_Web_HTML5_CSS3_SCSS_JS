@@ -1,0 +1,128 @@
+$black_color : #444;
+$alt_text_color : white;
+$alt_bg_primary_color : white;
+$alt_bg_secondary_color: #ddd;
+$tr_even_color : #eee;
+$tr_odd_color : #fff;
+$fullwidth : 100%;
+@mixin margin-parm($parm) {
+	margin-left: $parm;
+	margin-bottom: $parm;
+}
+
+
+.blackwhite {
+	color : $alt_text_color;
+	background-color: $black_color;
+	}
+
+.primborders {
+	border : 1px solid grey;
+	margin : 5px;
+	margin-bottom: 15px;
+	padding: 8px;
+}
+.tabborders {
+
+			border         :2px solid black;
+	        border-collapse:collapse;
+		    padding        :10px;
+		    text-align     :left;
+}
+header {
+	@extend .blackwhite;
+	@extend .primborders;
+	.rel {
+	  	position:relative;
+	    top:0;
+	}
+}
+
+footer {
+	@extend .blackwhite;
+	@extend .primborders;
+}
+
+section {
+	@extend .primborders;
+	background-color : $alt_bg_secondary_color;
+}
+
+article {
+	@extend .primborders;
+	background-color : $alt_bg_primary_color;
+}	
+
+body  {
+		font-family : verdana;
+		font-size: 0.8em;
+		line-height : 1.5;
+}
+
+h1::before {
+	content: url(RajasekharPhoto.jpg);
+}
+
+nav {
+	ul {
+		margin :0;
+		padding:0;
+		list-style-type : square;
+		text-align : justify;
+		li {
+			display: inline;
+			padding: 5px;
+		}
+	}
+}
+
+@import '_tabdeco';
+
+tr.pers {
+	td:first-child {
+		font-weight: bold;
+		}
+	td:last-child {
+		text-indent: 10px;
+	}
+}
+
+p.fclass {
+	font-style : italic;
+} 
+
+p.dclass {
+	font-weight : bold;
+	text-decoration : underline;
+}
+
+.divc {
+	float:clear;
+}
+div#md {
+	width: $fullwidth;
+}
+.clearfix {
+	overflow: auto;
+}
+.mbox {
+	display: inline-block;
+	border-collapse: collapse;
+	width: $fullwidth / 4;
+	height: 150px;
+	border: 1px solid blue;
+	@include margin-parm(5px);
+	padding: 10px;
+	word-wrap: break-word;
+	overflow: auto;
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+span.top {
+
+	position:absolute;
+	right: 15px;
+	margin:inherit;
+	text-align:right;
+}
