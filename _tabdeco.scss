@@ -1,0 +1,22 @@
+
+table.prop {
+			 width : $fullwidth;
+			 @extend .tabborders;
+
+		    th {
+			 	@extend .tabborders;
+			 	@extend .blackwhite;
+			  }
+
+			tr:nth-child(even)  {
+			 	background-color: $tr_even_color;
+				}
+
+			tr:nth-child(odd) {
+			 	background-color: $tr_odd_color;
+			 	}
+			 
+			td {
+			    	@extend .tabborders;
+			   }
+}
