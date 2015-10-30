@@ -1,0 +1,134 @@
+/* line 14, ../sass/myStyle.scss */
+.blackwhite, header, footer, table.prop th {
+  color: white;
+  background-color: #444;
+}
+
+/* line 19, ../sass/myStyle.scss */
+.primborders, header, footer, section, article {
+  border: 1px solid grey;
+  margin: 5px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+/* line 25, ../sass/myStyle.scss */
+.tabborders, table.prop, table.prop th, table.prop td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: left;
+}
+
+/* line 35, ../sass/myStyle.scss */
+header .rel {
+  position: relative;
+  top: 0;
+}
+
+/* line 46, ../sass/myStyle.scss */
+section {
+  background-color: #ddd;
+}
+
+/* line 51, ../sass/myStyle.scss */
+article {
+  background-color: white;
+}
+
+/* line 56, ../sass/myStyle.scss */
+body {
+  font-family: verdana;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+/* line 62, ../sass/myStyle.scss */
+h1::before {
+  content: url(RajasekharPhoto.jpg);
+}
+
+/* line 67, ../sass/myStyle.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: square;
+  text-align: justify;
+}
+/* line 72, ../sass/myStyle.scss */
+nav ul li {
+  display: inline;
+  padding: 5px;
+}
+
+/* line 2, ../sass/_tabdeco.scss */
+table.prop {
+  width: 100%;
+}
+/* line 11, ../sass/_tabdeco.scss */
+table.prop tr:nth-child(even) {
+  background-color: #eee;
+}
+/* line 15, ../sass/_tabdeco.scss */
+table.prop tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* line 82, ../sass/myStyle.scss */
+tr.pers td:first-child {
+  font-weight: bold;
+}
+/* line 85, ../sass/myStyle.scss */
+tr.pers td:last-child {
+  text-indent: 10px;
+}
+
+/* line 90, ../sass/myStyle.scss */
+p.fclass {
+  font-style: italic;
+}
+
+/* line 94, ../sass/myStyle.scss */
+p.dclass {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* line 99, ../sass/myStyle.scss */
+.divc {
+  float: clear;
+}
+
+/* line 102, ../sass/myStyle.scss */
+div#md {
+  width: 100%;
+}
+
+/* line 105, ../sass/myStyle.scss */
+.clearfix {
+  overflow: auto;
+}
+
+/* line 108, ../sass/myStyle.scss */
+.mbox {
+  display: inline-block;
+  border-collapse: collapse;
+  width: 25%;
+  height: 150px;
+  border: 1px solid blue;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  word-wrap: break-word;
+  overflow: auto;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+/* line 122, ../sass/myStyle.scss */
+span.top {
+  position: absolute;
+  right: 15px;
+  margin: inherit;
+  text-align: right;
+}
